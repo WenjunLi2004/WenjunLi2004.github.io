@@ -7,7 +7,7 @@ subtitle: 深圳大学本科（2023–2027），Lumina Group，研究方向：�
 
 profile:
   align: right
-  image: Luffy.jpg
+  image: Shanks.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Email: <a href="mailto:liwenjun2004@gmail.com">liwenjun2004@gmail.com</a></p>
@@ -27,7 +27,4 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-
-我叫李文俊，目前就读于深圳大学本科（2023–2027），研究方向为具身智能（Embodied Intelligence）。我现加入 Lumina Group，从事与机器人与具身智能相关的研究与实践。
-
-欢迎通过邮箱与我联系。如需了解我的最新研究与项目，请访问我的 GitHub 与 Google Scholar。
+Hi, I am Wenjun Li.
