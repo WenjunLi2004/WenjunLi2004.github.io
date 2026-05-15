@@ -3,7 +3,7 @@ layout: page
 permalink: /os-notes/
 title: OS Notes
 description: 操作系统课堂笔记的移动端友好 HTML 版本。
-nav: true
+nav: false
 nav_order: 6
 ---
 
