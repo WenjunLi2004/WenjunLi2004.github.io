@@ -7,6 +7,7 @@ on:
       - master
     paths:
       - "index.html"
+      - "honors.html"
       - "robots.txt"
       - "sitemap.xml"
       - ".nojekyll"
@@ -39,7 +40,7 @@ jobs:
       - name: Build static artifact
         run: |
           mkdir -p _site/assets
-          cp index.html robots.txt sitemap.xml .nojekyll _site/
+          cp index.html honors.html robots.txt sitemap.xml .nojekyll _site/
           cp -R assets/site _site/assets/site
 
       - name: Upload artifact
