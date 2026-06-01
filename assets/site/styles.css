@@ -69,8 +69,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text);
-  background:
-    linear-gradient(
+  background: linear-gradient(
       90deg,
       transparent 0,
       transparent calc(50% - 490px),
@@ -968,8 +967,7 @@ p + p {
   overflow: hidden;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  background:
-    linear-gradient(color-mix(in srgb, var(--accent) 7%, transparent) 1px, transparent 1px),
+  background: linear-gradient(color-mix(in srgb, var(--accent) 7%, transparent) 1px, transparent 1px),
     linear-gradient(90deg, color-mix(in srgb, var(--accent) 5%, transparent) 1px, transparent 1px);
   background-size:
     100% 86px,
