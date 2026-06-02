@@ -12,6 +12,7 @@ on:
     paths:
       - "index.html"
       - "honors.html"
+      - "404.html"
       - "assets/site/**"
       - "README.md"
       - "FONT_LICENSES.md"
@@ -28,4 +29,4 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Run Prettier
-        run: npx prettier@3.3.3 --check index.html honors.html assets/site/main.js assets/site/styles.css README.md FONT_LICENSES.md .github/workflows/*.yml
+        run: npx prettier@3.3.3 --check index.html honors.html 404.html assets/site/main.js assets/site/styles.css README.md FONT_LICENSES.md .github/workflows/*.yml

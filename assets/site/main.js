@@ -93,6 +93,46 @@ if (!prefersReducedMotion.matches && "IntersectionObserver" in window) {
   });
 }
 
+// Copy BibTeX from the publication citation block (index page only)
+const bibtexCopyBtn = document.querySelector("[data-bibtex-copy]");
+if (bibtexCopyBtn) {
+  const bibtexSource = document.querySelector("[data-bibtex]");
+  let copyResetTimer;
+  bibtexCopyBtn.addEventListener("click", async () => {
+    const text = bibtexSource?.textContent?.trim() ?? "";
+    if (!text) return;
+
+    let ok = false;
+    try {
+      await navigator.clipboard.writeText(text);
+      ok = true;
+    } catch {
+      // Fallback for non-secure contexts / older browsers
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.setAttribute("readonly", "");
+        ta.style.position = "fixed";
+        ta.style.opacity = "0";
+        document.body.appendChild(ta);
+        ta.select();
+        ok = document.execCommand("copy");
+        ta.remove();
+      } catch {
+        ok = false;
+      }
+    }
+
+    bibtexCopyBtn.textContent = ok ? "Copied" : "Copy failed";
+    bibtexCopyBtn.classList.toggle("is-copied", ok);
+    clearTimeout(copyResetTimer);
+    copyResetTimer = setTimeout(() => {
+      bibtexCopyBtn.textContent = "Copy";
+      bibtexCopyBtn.classList.remove("is-copied");
+    }, 1600);
+  });
+}
+
 if (honorBoard) {
   // Prevent browser's native link/image drag, which fights Matter.js mouse tracking
   honorBoard.addEventListener("dragstart", (e) => e.preventDefault());

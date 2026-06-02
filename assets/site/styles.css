@@ -706,6 +706,131 @@ p + p {
   background: color-mix(in srgb, #53653f 25%, transparent);
 }
 
+.cite {
+  margin-top: 18px;
+}
+
+.cite > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 650;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.cite > summary::-webkit-details-marker {
+  display: none;
+}
+
+.cite > summary::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-1px) rotate(-45deg);
+  transition: transform 200ms ease;
+}
+
+.cite[open] > summary::before {
+  transform: translateY(-2px) rotate(45deg);
+}
+
+.cite-body {
+  margin-top: 14px;
+  max-width: 660px;
+}
+
+.cite-label {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.cite-text {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.cite-bibtex-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.cite-bibtex-head .cite-label {
+  margin: 0;
+}
+
+.cite-copy {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 12px;
+  color: var(--muted);
+  background: transparent;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.cite-copy:hover {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 42%, var(--line));
+}
+
+.cite-copy:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 60%, transparent);
+  outline-offset: 2px;
+}
+
+.cite-copy.is-copied {
+  color: color-mix(in srgb, #4d633f 80%, var(--text));
+  border-color: color-mix(in srgb, #7b8f69 48%, var(--line));
+  background: color-mix(in srgb, #dfe9d5 50%, transparent);
+}
+
+[data-theme="dark"] .cite-copy.is-copied {
+  color: #c9ddb4;
+  border-color: color-mix(in srgb, #a8c091 45%, var(--line));
+  background: color-mix(in srgb, #53653f 28%, transparent);
+}
+
+.cite-bibtex {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--paper) 70%, transparent);
+  overflow-x: auto;
+}
+
+.cite-bibtex code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: var(--text);
+  white-space: pre;
+}
+
 .section-note {
   max-width: 840px;
   margin-bottom: 20px;
@@ -847,6 +972,24 @@ p + p {
 .honors-hero p {
   max-width: 720px;
   margin-top: 18px;
+}
+
+.error-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 56vh;
+  padding: 60px 0;
+}
+
+.error-hero h1 {
+  margin-top: 10px;
+}
+
+.error-hero > p:not(.kicker) {
+  max-width: 460px;
+  margin-top: 16px;
+  color: var(--muted);
 }
 
 .section-heading-row {

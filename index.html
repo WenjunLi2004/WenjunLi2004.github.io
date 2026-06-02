@@ -25,6 +25,60 @@
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23241d16'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='700' text-anchor='middle' fill='%23f7f2ea'%3EWL%3C/text%3E%3C/svg%3E"
     />
     <link rel="stylesheet" href="assets/site/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://wenjunli2004.github.io/#wenjun-li",
+            "name": "Wenjun Li",
+            "alternateName": "李文俊",
+            "url": "https://wenjunli2004.github.io/",
+            "jobTitle": "Computer Science Undergraduate",
+            "affiliation": {
+              "@type": "CollegeOrUniversity",
+              "name": "Shenzhen University",
+              "url": "https://www.szu.edu.cn"
+            },
+            "knowsAbout": [
+              "Embodied AI",
+              "Vision-Language-Action models",
+              "Multi-agent Manipulation",
+              "Robot Learning"
+            ],
+            "sameAs": [
+              "https://github.com/WenjunLi2004",
+              "https://scholar.google.com/citations?user=2UoMP0kAAAAJ&hl=zh-CN"
+            ]
+          },
+          {
+            "@type": "ScholarlyArticle",
+            "name": "LeHome: A Simulation Environment for Deformable Object Manipulation in Household Scenarios",
+            "headline": "LeHome: A Simulation Environment for Deformable Object Manipulation in Household Scenarios",
+            "url": "https://lehome-web.github.io",
+            "sameAs": "https://arxiv.org/pdf/2604.22363",
+            "datePublished": "2026",
+            "author": [
+              { "@type": "Person", "name": "Zeyi Li" },
+              { "@type": "Person", "name": "Yushi Yang" },
+              { "@type": "Person", "name": "Shawn Xie" },
+              { "@type": "Person", "name": "Kyle Xu" },
+              { "@type": "Person", "name": "Tianxing Chen" },
+              { "@type": "Person", "name": "Yuran Wang" },
+              { "@type": "Person", "name": "Zhenhao Shen" },
+              { "@type": "Person", "name": "Yan Shen" },
+              { "@type": "Person", "name": "Yue Chen" },
+              { "@type": "Person", "name": "Wenjun Li", "@id": "https://wenjunli2004.github.io/#wenjun-li" }
+            ],
+            "isPartOf": {
+              "@type": "CreativeWork",
+              "name": "IEEE International Conference on Robotics and Automation (ICRA) 2026"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -88,12 +142,15 @@
             class="portrait-img portrait-img-light"
             src="assets/site/wenjun-li-portrait-light.jpeg"
             alt="Wenjun Li"
+            fetchpriority="high"
+            decoding="async"
           />
           <img
             class="portrait-img portrait-img-dark"
             src="assets/site/wenjun-li-portrait.jpeg"
             alt=""
             aria-hidden="true"
+            decoding="async"
           />
         </figure>
       </section>
@@ -110,7 +167,7 @@
               rel="noreferrer"
               aria-label="Shenzhen University"
             >
-              <img src="assets/site/szu-logo.png" alt="" aria-hidden="true" />
+              <img src="assets/site/szu-logo.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
             </a>
           </div>
           <div class="education-body">
@@ -178,6 +235,7 @@
               loop
               playsinline
               preload="metadata"
+              poster="assets/site/lehome-poster.jpg"
               aria-label="Place the beef patties on the bread on the plate."
             >
               <source src="assets/site/lehome-beef-patties.mp4" type="video/mp4" />
