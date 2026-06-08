@@ -1,0 +1,14 @@
+name = "wenjun-domain-router"
+main = "domain-router.js"
+compatibility_date = "2026-06-08"
+
+routes = [
+  { pattern = "cv.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "github.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "scholar.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "lehome.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "paper.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "notes.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "blog.wenjun.li/*", zone_name = "wenjun.li" },
+  { pattern = "go.wenjun.li/*", zone_name = "wenjun.li" },
+]

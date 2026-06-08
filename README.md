@@ -9,6 +9,7 @@ This repository no longer uses Jekyll or al-folio. The site is intentionally sma
 - `assets/site/main.js` contains theme switching, scroll state, reveal animations, and micro-interactions.
 - `.github/workflows/deploy.yml` publishes the static files to GitHub Pages.
 - `CNAME` keeps the custom domain set to `wenjun.li`.
+- `cloudflare/` contains a Worker-based routing setup for subdomain redirects such as `cv.wenjun.li`.
 
 ## Deployment
 
