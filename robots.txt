@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://WenjunLi2004.github.io/sitemap.xml
+Sitemap: https://wenjun.li/sitemap.xml

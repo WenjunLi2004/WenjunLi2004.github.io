@@ -8,6 +8,11 @@ This repository no longer uses Jekyll or al-folio. The site is intentionally sma
 - `assets/site/styles.css` contains the visual system, responsive layout, and animation styles.
 - `assets/site/main.js` contains theme switching, scroll state, reveal animations, and micro-interactions.
 - `.github/workflows/deploy.yml` publishes the static files to GitHub Pages.
+- `CNAME` keeps the custom domain set to `wenjun.li`.
+
+## Deployment
+
+GitHub Pages should use **GitHub Actions** as the source. The old `gh-pages` branch is not used; deployments are produced from `main` by `.github/workflows/deploy.yml`.
 
 ## Local Preview
 

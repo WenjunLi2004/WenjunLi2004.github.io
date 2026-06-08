@@ -11,6 +11,7 @@ on:
       - "404.html"
       - "robots.txt"
       - "sitemap.xml"
+      - "CNAME"
       - ".nojekyll"
       - "assets/site/**"
       - ".github/workflows/deploy.yml"
@@ -41,7 +42,7 @@ jobs:
       - name: Build static artifact
         run: |
           mkdir -p _site/assets
-          cp index.html honors.html 404.html robots.txt sitemap.xml .nojekyll _site/
+          cp index.html honors.html 404.html robots.txt sitemap.xml CNAME .nojekyll _site/
           cp -R assets/site _site/assets/site
 
       - name: Upload artifact
