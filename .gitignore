@@ -3,3 +3,5 @@ node_modules/
 .DS_Store
 .idea/
 .claude/
+cloudflare/.wrangler/
+cloudflare/wrangler.toml

@@ -1,19 +1,22 @@
+const SCHOLAR_URL = "https://scholar.google.com/citations?user=2UoMP0kAAAAJ";
+
 const HOST_ROUTES = {
   "cv.wenjun.li": { target: "https://wenjun.li/cv/", preservePath: true },
   "notes.wenjun.li": { target: "https://wenjun.li/notes/", preservePath: true },
   "blog.wenjun.li": { target: "https://wenjun.li/blog/", preservePath: true },
   "github.wenjun.li": { target: "https://wenjun.li/github/" },
-  "scholar.wenjun.li": { target: "https://wenjun.li/scholar/" },
-  "lehome.wenjun.li": { target: "https://wenjun.li/lehome/" },
-  "paper.wenjun.li": { target: "https://wenjun.li/paper/lehome/" },
+  "scholar.wenjun.li": { target: SCHOLAR_URL },
+  "lehome.wenjun.li": { target: "https://wenjun.li/paper/lehome/" },
+  "paper.wenjun.li": { target: "https://wenjun.li/paper/lehome/pdf/" },
 };
 
 const GO_ROUTES = {
   cv: "https://wenjun.li/cv/",
   github: "https://wenjun.li/github/",
-  scholar: "https://wenjun.li/scholar/",
-  lehome: "https://wenjun.li/lehome/",
-  paper: "https://wenjun.li/paper/lehome/",
+  scholar: SCHOLAR_URL,
+  lehome: "https://wenjun.li/paper/lehome/",
+  paper: "https://wenjun.li/paper/lehome/pdf/",
+  lehomepdf: "https://wenjun.li/paper/lehome/pdf/",
   notes: "https://wenjun.li/notes/",
   blog: "https://wenjun.li/blog/",
   honors: "https://wenjun.li/honors.html",
@@ -42,7 +45,9 @@ export default {
 
       if (target) {
         const destination = new URL(target);
-        destination.search = url.search;
+        url.searchParams.forEach((value, key) => {
+          destination.searchParams.set(key, value);
+        });
         return Response.redirect(destination.toString(), 302);
       }
 

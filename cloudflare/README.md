@@ -4,9 +4,9 @@ This Worker turns subdomains into durable redirects:
 
 - `cv.wenjun.li` -> `https://wenjun.li/cv/`
 - `github.wenjun.li` -> `https://wenjun.li/github/`
-- `scholar.wenjun.li` -> `https://wenjun.li/scholar/`
-- `lehome.wenjun.li` -> `https://wenjun.li/lehome/`
-- `paper.wenjun.li` -> `https://wenjun.li/paper/lehome/`
+- `scholar.wenjun.li` -> Google Scholar profile
+- `lehome.wenjun.li` -> `https://wenjun.li/paper/lehome/`
+- `paper.wenjun.li` -> `https://wenjun.li/paper/lehome/pdf/`
 - `notes.wenjun.li` -> `https://wenjun.li/notes/`
 - `blog.wenjun.li` -> `https://wenjun.li/blog/`
 - `go.wenjun.li/cv`, `go.wenjun.li/github`, etc. -> matching short links

@@ -17,7 +17,6 @@ on:
       - "blog/**"
       - "cv/**"
       - "github/**"
-      - "lehome/**"
       - "notes/**"
       - "paper/**"
       - "scholar/**"
@@ -52,7 +51,7 @@ jobs:
           mkdir -p _site/assets
           cp index.html honors.html 404.html robots.txt sitemap.xml CNAME .nojekyll _site/
           cp -R assets/site _site/assets/site
-          cp -R blog cv github lehome notes paper scholar .well-known _site/
+          cp -R blog cv github notes paper scholar .well-known _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

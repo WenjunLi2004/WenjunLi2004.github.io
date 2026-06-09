@@ -18,7 +18,6 @@ on:
       - "cloudflare/**"
       - "cv/**"
       - "github/**"
-      - "lehome/**"
       - "notes/**"
       - "paper/**"
       - "scholar/**"
@@ -37,4 +36,4 @@ jobs:
         uses: actions/setup-node@v4
 
       - name: Run Prettier
-        run: npx prettier@3.3.3 --check index.html honors.html 404.html blog/index.html cv/index.html github/index.html lehome/index.html notes/index.html paper/lehome/index.html scholar/index.html assets/site/main.js assets/site/styles.css cloudflare/domain-router.js cloudflare/README.md README.md FONT_LICENSES.md .github/workflows/*.yml
+        run: npx prettier@3.3.3 --check index.html honors.html 404.html blog/index.html cv/index.html github/index.html notes/index.html paper/lehome/index.html paper/lehome/pdf/index.html scholar/index.html assets/site/main.js assets/site/styles.css cloudflare/domain-router.js cloudflare/README.md README.md FONT_LICENSES.md .github/workflows/*.yml

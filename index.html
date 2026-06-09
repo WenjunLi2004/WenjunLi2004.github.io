@@ -6,11 +6,11 @@
     <meta name="theme-color" content="#f7f2ea" />
     <meta
       name="description"
-      content="Wenjun Li, undergraduate student in Computer Science and Technology at Shenzhen University. Research interests include Embodied AI, VLA algorithms, and multi-agent manipulation."
+      content="Wenjun Li (WenjunLi, Li Wenjun, 李文俊), undergraduate student in Computer Science and Technology at Shenzhen University. Research interests include Embodied AI, VLA algorithms, and multi-agent manipulation."
     />
     <meta
       name="keywords"
-      content="Wenjun Li, Li Wenjun, Shenzhen University, Embodied AI, VLA, Multi-agent Manipulation, Robotics"
+      content="Wenjun Li, WenjunLi, WenjunLi2004, Li Wenjun, 李文俊, 深圳大学, Shenzhen University, Embodied AI, VLA, Multi-agent Manipulation, Robotics"
     />
     <meta property="og:title" content="Wenjun Li | Personal Website" />
     <meta
@@ -18,6 +18,7 @@
       content="Computer Science undergraduate at Shenzhen University, working toward Embodied AI and robot learning."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wenjun Li" />
     <meta property="og:url" content="https://wenjun.li/" />
     <meta property="og:image" content="https://wenjun.li/assets/site/wenjun-li-portrait.jpeg" />
     <link rel="canonical" href="https://wenjun.li/" />
@@ -32,11 +33,20 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": "WebSite",
+            "@id": "https://wenjun.li/#website",
+            "url": "https://wenjun.li/",
+            "name": "Wenjun Li",
+            "alternateName": ["WenjunLi", "WenjunLi2004", "李文俊"],
+            "publisher": { "@id": "https://wenjun.li/#wenjun-li" }
+          },
+          {
             "@type": "Person",
             "@id": "https://wenjun.li/#wenjun-li",
             "name": "Wenjun Li",
-            "alternateName": "李文俊",
+            "alternateName": ["李文俊", "Li Wenjun", "WenjunLi", "WenjunLi2004"],
             "url": "https://wenjun.li/",
+            "mainEntityOfPage": { "@id": "https://wenjun.li/#website" },
             "jobTitle": "Computer Science Undergraduate",
             "affiliation": {
               "@type": "CollegeOrUniversity",
@@ -51,7 +61,7 @@
             ],
             "sameAs": [
               "https://github.com/WenjunLi2004",
-              "https://scholar.google.com/citations?user=2UoMP0kAAAAJ&hl=zh-CN"
+              "https://scholar.google.com/citations?user=2UoMP0kAAAAJ"
             ]
           },
           {
@@ -130,10 +140,7 @@
           <div class="link-row" aria-label="Profile links">
             <a href="mailto:liwenjun2004@gmail.com">Email</a>
             <a href="https://github.com/WenjunLi2004" target="_blank" rel="noreferrer">GitHub</a>
-            <a
-              href="https://scholar.google.com/citations?user=2UoMP0kAAAAJ&hl=zh-CN"
-              target="_blank"
-              rel="noreferrer"
+            <a href="https://scholar.google.com/citations?user=2UoMP0kAAAAJ" target="_blank" rel="noreferrer"
               >Google Scholar</a
             >
           </div>
@@ -346,10 +353,7 @@
         <p class="link-row">
           <a href="mailto:liwenjun2004@gmail.com">liwenjun2004@gmail.com</a>
           <a href="https://github.com/WenjunLi2004" target="_blank" rel="noreferrer">GitHub</a>
-          <a
-            href="https://scholar.google.com/citations?user=2UoMP0kAAAAJ&hl=zh-CN"
-            target="_blank"
-            rel="noreferrer"
+          <a href="https://scholar.google.com/citations?user=2UoMP0kAAAAJ" target="_blank" rel="noreferrer"
             >Google Scholar</a
           >
         </p>
@@ -377,13 +381,13 @@
             <span>GitHub</span>
             <strong>wenjun.li/github</strong>
           </a>
-          <a class="route-card" href="lehome/">
-            <span>Project</span>
-            <strong>wenjun.li/lehome</strong>
-          </a>
           <a class="route-card" href="paper/lehome/">
-            <span>Paper</span>
+            <span>Project</span>
             <strong>wenjun.li/paper/lehome</strong>
+          </a>
+          <a class="route-card" href="paper/lehome/pdf/">
+            <span>Paper</span>
+            <strong>wenjun.li/paper/lehome/pdf</strong>
           </a>
           <a class="route-card" href="notes/">
             <span>Notes</span>
